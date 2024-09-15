@@ -53,22 +53,6 @@ rl.question(` ======= Welcome to our todo app ========
     }
 })
 
-// function input_todo(relevent) {
-//     const readline = require('node:readline');
-//     const rl1 = readline.createInterface({
-//         input: process.stdin,
-//         output: process.stdout
-//     });
-
-//     rl1.question(`Enter todo: `, todo => {
-//         console.log(todo)
-//         if (relevent == 1) {
-//             createTodo(todo)
-//         }
-//         rl1.close()
-//     })
-// }
-
 function createTodo(todo) {
     if (!fs.existsSync('todo.json')) {
         let obj = {
